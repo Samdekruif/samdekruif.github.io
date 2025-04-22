@@ -1,3 +1,8 @@
 prerequisites
 test
 intro
+some-stuff-about-me
+education
+work-experience
+publications
+curriculum-vitae
