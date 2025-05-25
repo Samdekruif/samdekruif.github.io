@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>5 Reproducible science | Portfolio data science</title>
+  <meta name="description" content="5 Reproducible science | Portfolio data science" />
+  <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="5 Reproducible science | Portfolio data science" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="5 Reproducible science | Portfolio data science" />
+  
+  
+  
+
+<meta name="author" content="Sam de Kruif" />
+
+
+<meta name="date" content="2025-05-25" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="plans-for-the-future.html"/>
+<link rel="next" href="reviewing-a-scientific-article-on-the-reproducibility.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Portfolio introduction</a></li>
+<li class="chapter" data-level="2" data-path="project-directory-restructure.html"><a href="project-directory-restructure.html"><i class="fa fa-check"></i><b>2</b> Project directory restructure</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="project-directory-restructure.html"><a href="project-directory-restructure.html#formatieve-opdracht-daur2"><i class="fa fa-check"></i><b>2.1</b> Formatieve opdracht DAUR2</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="project-directory-restructure.html"><a href="project-directory-restructure.html#rna-sequence-project-restructure"><i class="fa fa-check"></i><b>2.1.1</b> RNA-sequence project restructure</a></li>
+<li class="chapter" data-level="2.1.2" data-path="project-directory-restructure.html"><a href="project-directory-restructure.html#readme-file"><i class="fa fa-check"></i><b>2.1.2</b> README file</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="curriculum-vitae.html"><a href="curriculum-vitae.html"><i class="fa fa-check"></i><b>3</b> Curriculum Vitae</a>
+<ul>
+<li class="chapter" data-level="3.0.1" data-path="curriculum-vitae.html"><a href="curriculum-vitae.html#references"><i class="fa fa-check"></i><b>3.0.1</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="plans-for-the-future.html"><a href="plans-for-the-future.html"><i class="fa fa-check"></i><b>4</b> Plans for the future</a></li>
+<li class="chapter" data-level="5" data-path="reproducible-science.html"><a href="reproducible-science.html"><i class="fa fa-check"></i><b>5</b> Reproducible science</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="reproducible-science.html"><a href="reproducible-science.html#analysing-the-effect-of-various-chemical-compounds-on-the-reproduction-of-c.-elegans"><i class="fa fa-check"></i><b>5.1</b> Analysing the effect of various chemical compounds on the reproduction of C. elegans</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="reproducible-science.html"><a href="reproducible-science.html#normalization-of-the-data"><i class="fa fa-check"></i><b>5.1.1</b> Normalization of the data</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="reproducible-science.html"><a href="reproducible-science.html#follow-up-analysis-using-the-drc-package-in-r"><i class="fa fa-check"></i><b>5.2</b> Follow-up analysis using the drc package in R</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="reproducible-science.html"><a href="reproducible-science.html#dose-response-model-analysis"><i class="fa fa-check"></i><b>5.2.1</b> Dose-Response model analysis</a></li>
+<li class="chapter" data-level="5.2.2" data-path="reproducible-science.html"><a href="reproducible-science.html#example-of-a-analysis-using-the-log-logistic-model-in-the-drc-package"><i class="fa fa-check"></i><b>5.2.2</b> Example of a analysis using the log-logistic model in the drc package</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="reviewing-a-scientific-article-on-the-reproducibility.html"><a href="reviewing-a-scientific-article-on-the-reproducibility.html"><i class="fa fa-check"></i><b>6</b> Reviewing a scientific article on the reproducibility</a>
+<ul>
+<li class="chapter" data-level="6.0.1" data-path="reviewing-a-scientific-article-on-the-reproducibility.html"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#criteria"><i class="fa fa-check"></i><b>6.0.1</b> Criteria</a></li>
+<li class="chapter" data-level="6.1" data-path="reviewing-a-scientific-article-on-the-reproducibility.html"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#the-article-review"><i class="fa fa-check"></i><b>6.1</b> The article review</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="reviewing-a-scientific-article-on-the-reproducibility.html"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#scoring-the-article-on-the-criteria"><i class="fa fa-check"></i><b>6.1.1</b> Scoring the article on the criteria</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="reviewing-a-scientific-article-on-the-reproducibility.html"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#r-code"><i class="fa fa-check"></i><b>6.2</b> R code</a></li>
+<li class="chapter" data-level="6.3" data-path="reviewing-a-scientific-article-on-the-reproducibility.html"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#reproduction-review-of-r-code"><i class="fa fa-check"></i><b>6.3</b> Reproduction review of R code</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Portfolio data science</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="reproducible-science" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">5</span> Reproducible science<a href="reproducible-science.html#reproducible-science" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="analysing-the-effect-of-various-chemical-compounds-on-the-reproduction-of-c.-elegans" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Analysing the effect of various chemical compounds on the reproduction of C. elegans<a href="reproducible-science.html#analysing-the-effect-of-various-chemical-compounds-on-the-reproduction-of-c.-elegans" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="reproducible-science.html#cb1-1" tabindex="-1"></a><span class="do">## load nessesary library&#39;s</span></span>
+<span id="cb1-2"><a href="reproducible-science.html#cb1-2" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-3"><a href="reproducible-science.html#cb1-3" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-4"><a href="reproducible-science.html#cb1-4" tabindex="-1"></a><span class="fu">library</span>(tools)</span>
+<span id="cb1-5"><a href="reproducible-science.html#cb1-5" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-6"><a href="reproducible-science.html#cb1-6" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="reproducible-science.html#cb2-1" tabindex="-1"></a><span class="do">## Load the data file into R studio </span></span>
+<span id="cb2-2"><a href="reproducible-science.html#cb2-2" tabindex="-1"></a><span class="do">## Select the columns needed for the analysis</span></span>
+<span id="cb2-3"><a href="reproducible-science.html#cb2-3" tabindex="-1"></a>data_CE_LIQ_FLOW <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_excel</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;raw_data/data04a/CE.LIQ.FLOW.062_Tidydata.xlsx&quot;</span>), </span>
+<span id="cb2-4"><a href="reproducible-science.html#cb2-4" tabindex="-1"></a>                                       <span class="at">col_names =</span> <span class="cn">TRUE</span>, <span class="at">sheet =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-5"><a href="reproducible-science.html#cb2-5" tabindex="-1"></a>  <span class="fu">select</span>(RawData, compName, compConcentration, expType)</span>
+<span id="cb2-6"><a href="reproducible-science.html#cb2-6" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="reproducible-science.html#cb2-7" tabindex="-1"></a><span class="do">## Check data types</span></span>
+<span id="cb2-8"><a href="reproducible-science.html#cb2-8" tabindex="-1"></a><span class="fu">str</span>(data_CE_LIQ_FLOW)</span></code></pre></div>
+<pre><code>## tibble [360 × 4] (S3: tbl_df/tbl/data.frame)
+##  $ RawData          : num [1:360] 44 37 45 47 41 35 41 36 40 38 ...
+##  $ compName         : chr [1:360] &quot;2,6-diisopropylnaphthalene&quot; &quot;2,6-diisopropylnaphthalene&quot; &quot;2,6-diisopropylnaphthalene&quot; &quot;2,6-diisopropylnaphthalene&quot; ...
+##  $ compConcentration: chr [1:360] &quot;4.99&quot; &quot;4.99&quot; &quot;4.99&quot; &quot;4.99&quot; ...
+##  $ expType          : chr [1:360] &quot;experiment&quot; &quot;experiment&quot; &quot;experiment&quot; &quot;experiment&quot; ...</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="reproducible-science.html#cb4-1" tabindex="-1"></a><span class="do">## Change the data types</span></span>
+<span id="cb4-2"><a href="reproducible-science.html#cb4-2" tabindex="-1"></a><span class="do">## Delete the NA values</span></span>
+<span id="cb4-3"><a href="reproducible-science.html#cb4-3" tabindex="-1"></a>clean_data_CE_LIQ_FLOW <span class="ot">&lt;-</span> data_CE_LIQ_FLOW <span class="sc">%&gt;%</span> </span>
+<span id="cb4-4"><a href="reproducible-science.html#cb4-4" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">compConcentration =</span> <span class="fu">as.numeric</span>(compConcentration), </span>
+<span id="cb4-5"><a href="reproducible-science.html#cb4-5" tabindex="-1"></a>         <span class="at">compName =</span> <span class="fu">factor</span>(compName), </span>
+<span id="cb4-6"><a href="reproducible-science.html#cb4-6" tabindex="-1"></a>         <span class="at">expType =</span> <span class="fu">factor</span>(expType)) <span class="sc">%&gt;%</span> <span class="fu">na.omit</span>()</span>
+<span id="cb4-7"><a href="reproducible-science.html#cb4-7" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="reproducible-science.html#cb4-8" tabindex="-1"></a><span class="do">## Save the cleaned data set</span></span>
+<span id="cb4-9"><a href="reproducible-science.html#cb4-9" tabindex="-1"></a><span class="fu">saveRDS</span>(clean_data_CE_LIQ_FLOW, </span>
+<span id="cb4-10"><a href="reproducible-science.html#cb4-10" tabindex="-1"></a>        <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;data/processed/V1_CE.LIQ.FLOW.062.RDS&quot;</span>))</span>
+<span id="cb4-11"><a href="reproducible-science.html#cb4-11" tabindex="-1"></a></span>
+<span id="cb4-12"><a href="reproducible-science.html#cb4-12" tabindex="-1"></a><span class="do">## View summary </span></span>
+<span id="cb4-13"><a href="reproducible-science.html#cb4-13" tabindex="-1"></a><span class="fu">summary</span>(clean_data_CE_LIQ_FLOW)</span></code></pre></div>
+<pre><code>##     RawData                             compName  compConcentration  
+##  Min.   :  0.00   2,6-diisopropylnaphthalene:90   Min.   : 0.000000  
+##  1st Qu.: 51.25   decane                    :90   1st Qu.: 0.000499  
+##  Median : 72.00   Ethanol                   :60   Median : 0.049900  
+##  Mean   : 68.10   naphthalene               :84   Mean   : 1.282013  
+##  3rd Qu.: 88.00   S-medium                  :30   3rd Qu.: 0.500000  
+##  Max.   :124.00                                   Max.   :19.500000  
+##             expType   
+##  controlNegative: 30  
+##  controlPositive: 30  
+##  controlVehicleA: 30  
+##  experiment     :264  
+##                       
+## </code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="reproducible-science.html#cb6-1" tabindex="-1"></a><span class="do">## Create a Scatter plot with jitter and a -log10-transformation</span></span>
+<span id="cb6-2"><a href="reproducible-science.html#cb6-2" tabindex="-1"></a><span class="fu">ggplot</span>(clean_data_CE_LIQ_FLOW, <span class="fu">aes</span>(<span class="at">x =</span> <span class="sc">-</span><span class="fu">log10</span>(compConcentration), </span>
+<span id="cb6-3"><a href="reproducible-science.html#cb6-3" tabindex="-1"></a>                                   <span class="at">y =</span> RawData)) <span class="sc">+</span> </span>
+<span id="cb6-4"><a href="reproducible-science.html#cb6-4" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">position =</span> <span class="fu">position_jitter</span>(<span class="at">width =</span> <span class="fl">0.165</span>, <span class="at">height =</span> <span class="fl">0.2</span>), <span class="fu">aes</span>(<span class="at">color =</span> compName, <span class="at">shape =</span> expType), <span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
+<span id="cb6-5"><a href="reproducible-science.html#cb6-5" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Relation between exposure to chemical compounds </span><span class="sc">\n</span><span class="st">and offspring production in C. elegans&quot;</span>,</span>
+<span id="cb6-6"><a href="reproducible-science.html#cb6-6" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;-log10(Compound concentration in nM)&quot;</span>,</span>
+<span id="cb6-7"><a href="reproducible-science.html#cb6-7" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;C. elegans offspring&quot;</span>,</span>
+<span id="cb6-8"><a href="reproducible-science.html#cb6-8" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">&quot;Compound&quot;</span>,</span>
+<span id="cb6-9"><a href="reproducible-science.html#cb6-9" tabindex="-1"></a>    <span class="at">shape =</span> <span class="st">&quot;Experiment Type&quot;</span>) <span class="sc">+</span></span>
+<span id="cb6-10"><a href="reproducible-science.html#cb6-10" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() </span></code></pre></div>
+<div class="figure"><span style="display:block;" id="fig:scatterplot"></span>
+<img src="_main_files/figure-html/scatterplot-1.png" alt="a scatterplot showing the relation between the amount of offspring produced bij C. elegans after being exposed to different kinds of chemical compounds." width="672" />
+<p class="caption">
+Figure 5.1: a scatterplot showing the relation between the amount of offspring produced bij C. elegans after being exposed to different kinds of chemical compounds.
+</p>
+</div>
+<div id="normalization-of-the-data" class="section level3 hasAnchor" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> Normalization of the data<a href="reproducible-science.html#normalization-of-the-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In the experiment C. elegans have been exposed to various chemical compounds to test the effect on the reproduction of C. elegans offspring. The amount of produced offspring have been counted per condition. To make sure the experiment is reliable controls have been tested as well.</p>
+<p>The <em>negative control</em> serves as the reference group. It reprisents the normal reproduction rates of C. elegans without exposure to various chemical compounds.</p>
+<p>The <em>positive control</em> is the group of C. elegans exposed to a known toxic chemical compound to confirm the assay can detect the adverse effects on the reproduction of C. elegans.</p>
+<p>The <em>vehicle control</em> serves as a control to test if the vihicle itself does not effect the C. elegans. This control group is only exposed to the solvent (carrier) used to deliver the chemical compounds.</p>
+<p>Together these controls establish a reliable baseline to verify assay sensitivity an specificity.</p>
+<p>To make sure the there can be a clear comparison across treatment groups the data shown in the figure below has been normalized relative to the mean value of the negative control group. The average response of the negative control group was set to 1. The other values were scaled relative to this baseline. For example the value of the experiment is 0.5 would indicate that the reproduction rate of offspring is 50% compared to the control group.
+The normalization of the experimental values enables a clearer comparison across treatment groups and reduces the impact of inter-experimental variability. It also allows the effect sizes to be interpreted independently of the absolute scale.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="reproducible-science.html#cb7-1" tabindex="-1"></a><span class="do">## Calculate mean of the negative control</span></span>
+<span id="cb7-2"><a href="reproducible-science.html#cb7-2" tabindex="-1"></a>mean_control_negative <span class="ot">&lt;-</span> clean_data_CE_LIQ_FLOW <span class="sc">%&gt;%</span></span>
+<span id="cb7-3"><a href="reproducible-science.html#cb7-3" tabindex="-1"></a>  <span class="fu">filter</span>(expType <span class="sc">==</span> <span class="st">&quot;controlNegative&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb7-4"><a href="reproducible-science.html#cb7-4" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mean_value =</span> <span class="fu">mean</span>(RawData, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb7-5"><a href="reproducible-science.html#cb7-5" tabindex="-1"></a>  <span class="fu">pull</span>(mean_value)</span>
+<span id="cb7-6"><a href="reproducible-science.html#cb7-6" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="reproducible-science.html#cb7-7" tabindex="-1"></a><span class="do">## Add normalized column</span></span>
+<span id="cb7-8"><a href="reproducible-science.html#cb7-8" tabindex="-1"></a>normalized_data <span class="ot">&lt;-</span> clean_data_CE_LIQ_FLOW <span class="sc">%&gt;%</span></span>
+<span id="cb7-9"><a href="reproducible-science.html#cb7-9" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">normRawData =</span> RawData <span class="sc">/</span> mean_control_negative)</span>
+<span id="cb7-10"><a href="reproducible-science.html#cb7-10" tabindex="-1"></a></span>
+<span id="cb7-11"><a href="reproducible-science.html#cb7-11" tabindex="-1"></a><span class="do">## Scatter plot with the normalized data</span></span>
+<span id="cb7-12"><a href="reproducible-science.html#cb7-12" tabindex="-1"></a><span class="fu">ggplot</span>(normalized_data, <span class="fu">aes</span>(<span class="at">x =</span> <span class="sc">-</span><span class="fu">log10</span>(compConcentration), <span class="at">y =</span> normRawData)) <span class="sc">+</span> </span>
+<span id="cb7-13"><a href="reproducible-science.html#cb7-13" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">position =</span> <span class="fu">position_jitter</span>(<span class="at">width =</span> <span class="fl">0.165</span>, <span class="at">height =</span> <span class="fl">0.05</span>),</span>
+<span id="cb7-14"><a href="reproducible-science.html#cb7-14" tabindex="-1"></a>             <span class="fu">aes</span>(<span class="at">color =</span> compName, <span class="at">shape =</span> expType), <span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
+<span id="cb7-15"><a href="reproducible-science.html#cb7-15" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Normalized offspring production relative to controlNegative</span><span class="sc">\n</span><span class="st">in C. elegans after chemical exposure&quot;</span>,</span>
+<span id="cb7-16"><a href="reproducible-science.html#cb7-16" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;-log10(Compound concentration in nM)&quot;</span>,</span>
+<span id="cb7-17"><a href="reproducible-science.html#cb7-17" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;Normalized offspring (relative to controlNegative)&quot;</span>,</span>
+<span id="cb7-18"><a href="reproducible-science.html#cb7-18" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">&quot;Compound&quot;</span>,</span>
+<span id="cb7-19"><a href="reproducible-science.html#cb7-19" tabindex="-1"></a>    <span class="at">shape =</span> <span class="st">&quot;Experiment Type&quot;</span>) <span class="sc">+</span></span>
+<span id="cb7-20"><a href="reproducible-science.html#cb7-20" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
+<div class="figure"><span style="display:block;" id="fig:normalisatie"></span>
+<img src="_main_files/figure-html/normalisatie-1.png" alt="a scatterplot showing the relation between the amount of offspring produced bij C. elegans after being exposed to different kinds of chemical compounds with normalized data." width="672" />
+<p class="caption">
+Figure 5.2: a scatterplot showing the relation between the amount of offspring produced bij C. elegans after being exposed to different kinds of chemical compounds with normalized data.
+</p>
+</div>
+</div>
+</div>
+<div id="follow-up-analysis-using-the-drc-package-in-r" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Follow-up analysis using the drc package in R<a href="reproducible-science.html#follow-up-analysis-using-the-drc-package-in-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A possible follow analysis could be a <em>dose-response analysis</em> to form a <em>IC<sub>50</sub> estimation</em>.
+Estimating the IC<sub>50</sub> analyses the concentration at which a compound reduces the biological reproduction response by 50%.
+A IC<sub>50</sub> analysis can be accomplished using a log-logistic model provided in the <em>drc</em> package in R.</p>
+<div id="dose-response-model-analysis" class="section level3 hasAnchor" number="5.2.1">
+<h3><span class="header-section-number">5.2.1</span> Dose-Response model analysis<a href="reproducible-science.html#dose-response-model-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A dose-response model is a regression model where usually a concentration or dose is presented as the independent variable whilst the dependent variable is referred to as a response or effect. To correctly use a dose-response model the description of the mean should be specified by a parametric function of dose. The mean should also be able to specify the assumptions about the distribution of the response.</p>
+<p>A large number of well known dose-response models are built in to the <em>drc packing</em> in R. The most used dose-response models used are the log-logistic models.</p>
+</div>
+<div id="example-of-a-analysis-using-the-log-logistic-model-in-the-drc-package" class="section level3 hasAnchor" number="5.2.2">
+<h3><span class="header-section-number">5.2.2</span> Example of a analysis using the log-logistic model in the drc package<a href="reproducible-science.html#example-of-a-analysis-using-the-log-logistic-model-in-the-drc-package" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="reproducible-science.html#cb8-1" tabindex="-1"></a><span class="do">## Install and Load Required Package</span></span>
+<span id="cb8-2"><a href="reproducible-science.html#cb8-2" tabindex="-1"></a><span class="co"># install.packages(&quot;drc&quot;)</span></span>
+<span id="cb8-3"><a href="reproducible-science.html#cb8-3" tabindex="-1"></a><span class="fu">library</span>(drc)</span>
+<span id="cb8-4"><a href="reproducible-science.html#cb8-4" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="reproducible-science.html#cb8-5" tabindex="-1"></a><span class="do">## Filter the Data for One Compound and Experimental Type</span></span>
+<span id="cb8-6"><a href="reproducible-science.html#cb8-6" tabindex="-1"></a>subset_data <span class="ot">&lt;-</span> normalized_data <span class="sc">%&gt;%</span></span>
+<span id="cb8-7"><a href="reproducible-science.html#cb8-7" tabindex="-1"></a>  <span class="fu">filter</span>(compName <span class="sc">==</span> <span class="st">&quot;decane&quot;</span>, expType <span class="sc">==</span> <span class="st">&quot;experiment&quot;</span>)</span>
+<span id="cb8-8"><a href="reproducible-science.html#cb8-8" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="reproducible-science.html#cb8-9" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="reproducible-science.html#cb8-10" tabindex="-1"></a><span class="do">## Fit a Log-Logistic Dose-Response Model</span></span>
+<span id="cb8-11"><a href="reproducible-science.html#cb8-11" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">drm</span>(normRawData <span class="sc">~</span> compConcentration, </span>
+<span id="cb8-12"><a href="reproducible-science.html#cb8-12" tabindex="-1"></a>             <span class="at">data =</span> subset_data,</span>
+<span id="cb8-13"><a href="reproducible-science.html#cb8-13" tabindex="-1"></a>             <span class="at">fct =</span> <span class="fu">LL.4</span>())  <span class="co"># 4-parameter log-logistic model</span></span>
+<span id="cb8-14"><a href="reproducible-science.html#cb8-14" tabindex="-1"></a></span>
+<span id="cb8-15"><a href="reproducible-science.html#cb8-15" tabindex="-1"></a><span class="do">## View Model Summary</span></span>
+<span id="cb8-16"><a href="reproducible-science.html#cb8-16" tabindex="-1"></a><span class="fu">summary</span>(model)</span></code></pre></div>
+<pre><code>## 
+## Model fitted: Log-logistic (ED50 as parameter) (4 parms)
+## 
+## Parameter estimates:
+## 
+##               Estimate Std. Error t-value   p-value    
+## b:(Intercept) 2.641583   1.017888  2.5952  0.011115 *  
+## c:(Intercept) 0.238285   0.030066  7.9254 7.486e-12 ***
+## d:(Intercept) 1.066149   0.017305 61.6093 &lt; 2.2e-16 ***
+## e:(Intercept) 0.119453   0.042934  2.7822  0.006634 ** 
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error:
+## 
+##  0.1158965 (86 degrees of freedom)</code></pre>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="reproducible-science.html#cb10-1" tabindex="-1"></a><span class="do">## Plot the Fitted Curve</span></span>
+<span id="cb10-2"><a href="reproducible-science.html#cb10-2" tabindex="-1"></a><span class="fu">plot</span>(model, <span class="at">type =</span> <span class="st">&quot;all&quot;</span>, <span class="at">main =</span> <span class="st">&quot;Dose-Response Curve&quot;</span>,</span>
+<span id="cb10-3"><a href="reproducible-science.html#cb10-3" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">&quot;Concentration (nM)&quot;</span>, <span class="at">ylab =</span> <span class="st">&quot;Normalized Offspring&quot;</span>)</span></code></pre></div>
+<p><img src="_main_files/figure-html/example-1.png" width="672" /></p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="reproducible-science.html#cb11-1" tabindex="-1"></a><span class="do">## Estimate the IC₅₀ Value</span></span>
+<span id="cb11-2"><a href="reproducible-science.html#cb11-2" tabindex="-1"></a><span class="fu">ED</span>(model, <span class="dv">50</span>, <span class="at">interval =</span> <span class="st">&quot;delta&quot;</span>)  <span class="co"># Effective Dose at 50%</span></span></code></pre></div>
+<pre><code>## 
+## Estimated effective doses
+## 
+##        Estimate Std. Error    Lower    Upper
+## e:1:50 0.119453   0.042934 0.034103 0.204803</code></pre>
+<p>The usage of this analysis can provide insight into the toxicity profile of each chemical compounds used in the experiment. By comparing the IC<sub>50</sub> values between compounds a prioritized list of compounds can be formed for future experiments.</p>
+<div id="references-1" class="section level4 hasAnchor" number="5.2.2.1">
+<h4><span class="header-section-number">5.2.2.1</span> References<a href="reproducible-science.html#references-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ol style="list-style-type: decimal">
+<li>Ritz, C., Baty, F., Streibig, J. C., &amp; Gerhard, D. (2015). Dose-Response Analysis Using R. PLOS ONE, 10(12), e0146021. <a href="https://doi.org/10.1371/journal.pone.0146021" class="uri">https://doi.org/10.1371/journal.pone.0146021</a></li>
+</ol>
+
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="plans-for-the-future.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="reviewing-a-scientific-article-on-the-reproducibility.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
+});
+});
+</script>
+
+</body>
+
+</html>

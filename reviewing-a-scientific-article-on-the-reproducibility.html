@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>6 Reviewing a scientific article on the reproducibility | Portfolio data science</title>
+  <meta name="description" content="6 Reviewing a scientific article on the reproducibility | Portfolio data science" />
+  <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="6 Reviewing a scientific article on the reproducibility | Portfolio data science" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="6 Reviewing a scientific article on the reproducibility | Portfolio data science" />
+  
+  
+  
+
+<meta name="author" content="Sam de Kruif" />
+
+
+<meta name="date" content="2025-05-25" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="reproducible-science.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Portfolio introduction</a></li>
+<li class="chapter" data-level="2" data-path="project-directory-restructure.html"><a href="project-directory-restructure.html"><i class="fa fa-check"></i><b>2</b> Project directory restructure</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="project-directory-restructure.html"><a href="project-directory-restructure.html#formatieve-opdracht-daur2"><i class="fa fa-check"></i><b>2.1</b> Formatieve opdracht DAUR2</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="project-directory-restructure.html"><a href="project-directory-restructure.html#rna-sequence-project-restructure"><i class="fa fa-check"></i><b>2.1.1</b> RNA-sequence project restructure</a></li>
+<li class="chapter" data-level="2.1.2" data-path="project-directory-restructure.html"><a href="project-directory-restructure.html#readme-file"><i class="fa fa-check"></i><b>2.1.2</b> README file</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="curriculum-vitae.html"><a href="curriculum-vitae.html"><i class="fa fa-check"></i><b>3</b> Curriculum Vitae</a>
+<ul>
+<li class="chapter" data-level="3.0.1" data-path="curriculum-vitae.html"><a href="curriculum-vitae.html#references"><i class="fa fa-check"></i><b>3.0.1</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="plans-for-the-future.html"><a href="plans-for-the-future.html"><i class="fa fa-check"></i><b>4</b> Plans for the future</a></li>
+<li class="chapter" data-level="5" data-path="reproducible-science.html"><a href="reproducible-science.html"><i class="fa fa-check"></i><b>5</b> Reproducible science</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="reproducible-science.html"><a href="reproducible-science.html#analysing-the-effect-of-various-chemical-compounds-on-the-reproduction-of-c.-elegans"><i class="fa fa-check"></i><b>5.1</b> Analysing the effect of various chemical compounds on the reproduction of C. elegans</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="reproducible-science.html"><a href="reproducible-science.html#normalization-of-the-data"><i class="fa fa-check"></i><b>5.1.1</b> Normalization of the data</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="reproducible-science.html"><a href="reproducible-science.html#follow-up-analysis-using-the-drc-package-in-r"><i class="fa fa-check"></i><b>5.2</b> Follow-up analysis using the drc package in R</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="reproducible-science.html"><a href="reproducible-science.html#dose-response-model-analysis"><i class="fa fa-check"></i><b>5.2.1</b> Dose-Response model analysis</a></li>
+<li class="chapter" data-level="5.2.2" data-path="reproducible-science.html"><a href="reproducible-science.html#example-of-a-analysis-using-the-log-logistic-model-in-the-drc-package"><i class="fa fa-check"></i><b>5.2.2</b> Example of a analysis using the log-logistic model in the drc package</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="reviewing-a-scientific-article-on-the-reproducibility.html"><a href="reviewing-a-scientific-article-on-the-reproducibility.html"><i class="fa fa-check"></i><b>6</b> Reviewing a scientific article on the reproducibility</a>
+<ul>
+<li class="chapter" data-level="6.0.1" data-path="reviewing-a-scientific-article-on-the-reproducibility.html"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#criteria"><i class="fa fa-check"></i><b>6.0.1</b> Criteria</a></li>
+<li class="chapter" data-level="6.1" data-path="reviewing-a-scientific-article-on-the-reproducibility.html"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#the-article-review"><i class="fa fa-check"></i><b>6.1</b> The article review</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="reviewing-a-scientific-article-on-the-reproducibility.html"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#scoring-the-article-on-the-criteria"><i class="fa fa-check"></i><b>6.1.1</b> Scoring the article on the criteria</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="reviewing-a-scientific-article-on-the-reproducibility.html"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#r-code"><i class="fa fa-check"></i><b>6.2</b> R code</a></li>
+<li class="chapter" data-level="6.3" data-path="reviewing-a-scientific-article-on-the-reproducibility.html"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#reproduction-review-of-r-code"><i class="fa fa-check"></i><b>6.3</b> Reproduction review of R code</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Portfolio data science</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="reviewing-a-scientific-article-on-the-reproducibility" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">6</span> Reviewing a scientific article on the reproducibility<a href="reviewing-a-scientific-article-on-the-reproducibility.html#reviewing-a-scientific-article-on-the-reproducibility" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>I will be reviewing the article <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0292215#sec040">The d Factor: General Distractibility and Its Relationships with ADHD Symptoms and Hyperfocus</a><sup>1</sup>. To review how reproducible the article is i will be basing my review on criteria set by article <a href="https://www.researchgate.net/publication/340244621_Reproducibility_and_reporting_practices_in_COVID-19_preprint_manuscripts">Reproducibility and reporting practices in COVID-19 preprint manuscripts</a><sup>2</sup>. The criteria set by the article can be found in table 1.</p>
+<div id="criteria" class="section level3 hasAnchor" number="6.0.1">
+<h3><span class="header-section-number">6.0.1</span> Criteria<a href="reviewing-a-scientific-article-on-the-reproducibility.html#criteria" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Table 1: Criteria for the scoring of the reproducibility of a article.</p>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Transparency Criteria</th>
+<th>Definition</th>
+<th>Response Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Study Purpose</td>
+<td>A concise statement in the introduction of the article, often in the last paragraph, that establishes the reason the research was conducted. Also called the study objective.</td>
+<td>Binary (Yes or No)</td>
+</tr>
+<tr class="even">
+<td>Data Availability Statement</td>
+<td>A statement, in an individual section offset from the main body of text, that explains how or if one can access a study’s data. The title of the section may vary, but it must explicitly mention data; it is therefore distinct from a supplementary materials section.</td>
+<td>Binary (Yes or No)</td>
+</tr>
+<tr class="odd">
+<td>Data Location</td>
+<td>Where the article’s data can be accessed, either raw or processed.</td>
+<td>Found Value</td>
+</tr>
+<tr class="even">
+<td>Study Location</td>
+<td>Author has stated in the methods section where the study took place or the data’s country/region of origin.</td>
+<td>Binary (Yes or No); Found Value</td>
+</tr>
+<tr class="odd">
+<td>Author Review</td>
+<td>The professionalism of the contact information that the author has provided in the manuscript.</td>
+<td>Found Value</td>
+</tr>
+<tr class="even">
+<td>Ethics Statement</td>
+<td>A statement within the manuscript indicating any ethical concerns, including the presence of sensitive data.</td>
+<td>Binary (Yes or No)</td>
+</tr>
+<tr class="odd">
+<td>Funding Statement</td>
+<td>A statement within the manuscript indicating whether or not the authors received funding for their research.</td>
+<td>Binary (Yes or No)</td>
+</tr>
+<tr class="even">
+<td>Code Availability</td>
+<td>Authors have shared access to the most updated code that they used in their study, including code used for analysis.</td>
+<td>Binary (Yes or No)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="the-article-review" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> The article review<a href="reviewing-a-scientific-article-on-the-reproducibility.html#the-article-review" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0292215#sec040">The d Factor: General Distractibility and Its Relationships with ADHD Symptoms and Hyperfocus</a><sup>1</sup></p>
+<p><strong>Research question:</strong>
+<em>How can we best characterize individual differences in distractibility?</em></p>
+<p>The article examines the vulnerability to distractions between different individuals. Primarily focusing on understanding the relationships between popular constructs that tap into distractibility. These constructs included external distraction, thought intrusions, repetitive negative thinking, and mind-wandering. Also examining the plausibility of extracting a general factor to capture the commonality underlying these constructs.
+The second goal of the study was to apply the model of distractibility derived from the study to understand the nature of ADHD symptomatology and hyperfocus. The article examined the role of construct-specific variances in explaining ADHD symptoms, functional impairments, and hyperfocus. Besides that the article examined how much additional variance the specific distractibility factors could explain over and above the general factor.</p>
+<p><strong>Methods:</strong></p>
+<p>The study involved two independent sample groups. Sample 1 included 651 adults and sample 2 included 569 students. Each individual participant completed an online battery of self-report questionnaires measuring distractibility, intrusive thoughts, repetitive negative thinking, mind-wandering, ADHD symptoms, and hyperfocus.</p>
+<p>Multiple validated scales were used (e.g., IPI-D, ASQ-E, WBSI, PTQ, PSWQ, Adult ADHD Self-report Scale), each scored by averaging item responses, with higher scores reflecting greater symptom severity. To ensure consistency in interpretation some scales were partially used or adjusted (e.g., reverse-scoring).</p>
+<p>Data analysis was performed in R using confirmatory factor analysis and structural equation modeling (SEM) via the <em>lavaan</em> package. Model fit was assessed using standard indices (CFI, RMSEA, SRMR), and model comparisons were evaluated using Satorra-Bentler χ² tests and Bayes Factors based on BIC. Sample 1 was used for model exploration, and Sample 2 was used for replication.</p>
+<div id="scoring-the-article-on-the-criteria" class="section level3 hasAnchor" number="6.1.1">
+<h3><span class="header-section-number">6.1.1</span> Scoring the article on the criteria<a href="reviewing-a-scientific-article-on-the-reproducibility.html#scoring-the-article-on-the-criteria" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Study purpose:</strong>
+<em>No</em></p>
+<p><strong>Data Availability Statement:</strong>
+<em>Yes</em></p>
+<p><strong>Data Location:</strong>
+<a href="https://osf.io/8j6p4/" class="uri">https://osf.io/8j6p4/</a></p>
+<p><strong>Study Location:</strong>
+<em>Yes; sample 1 from the U.S. or Canada and sample 2 from the introductory psychology subject pool at the University of Michigan</em></p>
+<p><strong>Author review:</strong></p>
+<p><em>Han Zhang</em>
+Roles Conceptualization, Formal analysis, Writing – original draft
+* E-mail: <a href="mailto:hanzh@umich.edu" class="email">hanzh@umich.edu</a>
+Affiliation Department of Psychology, University of Michigan, Ann Arbor, Michigan, United States of America
+ORCID logohttps://orcid.org/0000-0001-6087-0428</p>
+<p><em>Akira Miyake</em>
+Roles Conceptualization, Methodology, Supervision, Writing – review &amp; editing
+Affiliation Department of Psychology and Neuroscience, University of Colorado Boulder, Boulder, CO, United States of America</p>
+<p><em>Jahla Osborne</em>
+Roles Writing – review &amp; editing
+Affiliation Department of Psychology, University of Michigan, Ann Arbor, Michigan, United States of America
+ORCID logohttps://orcid.org/0000-0001-7930-5007</p>
+<p><em>Priti Shah</em>
+Roles Supervision, Writing – review &amp; editing
+Affiliation Department of Psychology, University of Michigan, Ann Arbor, Michigan, United States of America</p>
+<p><em>John Jonides</em>
+Roles Conceptualization, Funding acquisition, Resources, Supervision, Writing – review &amp; editing
+Affiliation Department of Psychology, University of Michigan, Ann Arbor, Michigan, United States of America</p>
+<p><strong>Ethics statement:</strong>
+<em>No</em></p>
+<p><strong>Funding statement:</strong>
+<em>No</em></p>
+<p><strong>Code:</strong>
+<em>Yes</em></p>
+</div>
+</div>
+<div id="r-code" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> R code<a href="reviewing-a-scientific-article-on-the-reproducibility.html#r-code" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-1" tabindex="-1"></a><span class="co"># load libraries</span></span>
+<span id="cb1-2"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-2" tabindex="-1"></a><span class="fu">library</span>(qgraph)</span>
+<span id="cb1-3"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-3" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-4"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-4" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-5"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-5" tabindex="-1"></a><span class="fu">library</span>(psych)</span>
+<span id="cb1-6"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-6" tabindex="-1"></a><span class="fu">source</span>(<span class="st">&quot;R/func.R&quot;</span>)</span>
+<span id="cb1-7"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-7" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-8" tabindex="-1"></a><span class="do">############ Correlation Matrix ############</span></span>
+<span id="cb1-9"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-9" tabindex="-1"></a><span class="co"># load data</span></span>
+<span id="cb1-10"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-10" tabindex="-1"></a><span class="fu">load</span>(<span class="st">&#39;data/processed/prolific_data.RData&#39;</span>)</span>
+<span id="cb1-11"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-11" tabindex="-1"></a><span class="fu">load</span>(<span class="st">&#39;data/processed/subject_pool_data.RData&#39;</span>)</span>
+<span id="cb1-12"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-12" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-13" tabindex="-1"></a>cols <span class="ot">=</span> <span class="fu">c</span>(</span>
+<span id="cb1-14"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-14" tabindex="-1"></a>  <span class="st">&quot;IPI_D&quot;</span>,</span>
+<span id="cb1-15"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-15" tabindex="-1"></a>  <span class="st">&quot;ASQ_E&quot;</span>,</span>
+<span id="cb1-16"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-16" tabindex="-1"></a>  <span class="st">&quot;AC_D&quot;</span>,</span>
+<span id="cb1-17"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-17" tabindex="-1"></a>  <span class="st">&quot;WBSI&quot;</span>,</span>
+<span id="cb1-18"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-18" tabindex="-1"></a>  <span class="st">&quot;TCAQ&quot;</span>,</span>
+<span id="cb1-19"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-19" tabindex="-1"></a>  <span class="st">&quot;TSI&quot;</span>,</span>
+<span id="cb1-20"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-20" tabindex="-1"></a>  <span class="st">&quot;PTQ&quot;</span>,</span>
+<span id="cb1-21"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-21" tabindex="-1"></a>  <span class="st">&quot;PSWQ&quot;</span>,</span>
+<span id="cb1-22"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-22" tabindex="-1"></a>  <span class="st">&quot;RRS_B&quot;</span>,</span>
+<span id="cb1-23"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-23" tabindex="-1"></a>  <span class="st">&quot;IPI_MW&quot;</span>,</span>
+<span id="cb1-24"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-24" tabindex="-1"></a>  <span class="st">&quot;MW_S&quot;</span>,</span>
+<span id="cb1-25"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-25" tabindex="-1"></a>  <span class="st">&quot;DDFS&quot;</span>,</span>
+<span id="cb1-26"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-26" tabindex="-1"></a>  <span class="st">&quot;ASRS_dc&quot;</span>,</span>
+<span id="cb1-27"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-27" tabindex="-1"></a>  <span class="st">&quot;FI&quot;</span>,</span>
+<span id="cb1-28"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-28" tabindex="-1"></a>  <span class="st">&quot;HF&quot;</span></span>
+<span id="cb1-29"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-29" tabindex="-1"></a>)</span>
+<span id="cb1-30"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-30" tabindex="-1"></a>table1rows <span class="ot">=</span> <span class="fu">c</span>(</span>
+<span id="cb1-31"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-31" tabindex="-1"></a>  <span class="st">&#39;Imaginal Processes Inventory - Distractibility&#39;</span>,</span>
+<span id="cb1-32"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-32" tabindex="-1"></a>  <span class="st">&#39;Attentional Style Questionnaire - External&#39;</span>,</span>
+<span id="cb1-33"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-33" tabindex="-1"></a>  <span class="st">&#39;Attentional Control - Distraction&#39;</span>,</span>
+<span id="cb1-34"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-34" tabindex="-1"></a>  <span class="st">&#39;White Bear Suppression Inventory&#39;</span>,</span>
+<span id="cb1-35"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-35" tabindex="-1"></a>  <span class="st">&#39;Thought Control Ability Questionnaire&#39;</span>,</span>
+<span id="cb1-36"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-36" tabindex="-1"></a>  <span class="st">&#39;Thought Suppression Inventory&#39;</span>,</span>
+<span id="cb1-37"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-37" tabindex="-1"></a>  <span class="st">&#39;Perseverative Thinking Questionnaire&#39;</span>,</span>
+<span id="cb1-38"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-38" tabindex="-1"></a>  <span class="st">&#39;Penn State Worry Questionnaire&#39;</span>,</span>
+<span id="cb1-39"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-39" tabindex="-1"></a>  <span class="st">&#39;Ruminative Response Scale - Brooding&#39;</span>,</span>
+<span id="cb1-40"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-40" tabindex="-1"></a>  <span class="st">&#39;Imaginal Processes Inventory - Mind-wandering&#39;</span>,</span>
+<span id="cb1-41"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-41" tabindex="-1"></a>  <span class="st">&#39;Mind-wandering - Spontaneous&#39;</span>,</span>
+<span id="cb1-42"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-42" tabindex="-1"></a>  <span class="st">&#39;Daydreaming Frequency Scale&#39;</span>,</span>
+<span id="cb1-43"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-43" tabindex="-1"></a>  <span class="st">&#39;Adult ADHD Self-Report Scale&#39;</span>,</span>
+<span id="cb1-44"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-44" tabindex="-1"></a>  <span class="st">&#39;Functional Impairment&#39;</span>,</span>
+<span id="cb1-45"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-45" tabindex="-1"></a>  <span class="st">&#39;Dispositional Hyperfocus&#39;</span></span>
+<span id="cb1-46"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-46" tabindex="-1"></a>)</span>
+<span id="cb1-47"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-47" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-48" tabindex="-1"></a>corr<span class="fl">.1</span> <span class="ot">=</span> psych<span class="sc">::</span><span class="fu">corr.test</span>(df1[, cols])</span>
+<span id="cb1-49"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-49" tabindex="-1"></a>corr<span class="fl">.2</span> <span class="ot">=</span> psych<span class="sc">::</span><span class="fu">corr.test</span>(df2[, cols])</span>
+<span id="cb1-50"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-50" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-51" tabindex="-1"></a>cormat.full <span class="ot">=</span> psych<span class="sc">::</span><span class="fu">lowerUpper</span>(corr<span class="fl">.1</span><span class="sc">$</span>r, corr<span class="fl">.2</span><span class="sc">$</span>r)</span>
+<span id="cb1-52"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-52" tabindex="-1"></a>pvals.full <span class="ot">=</span> psych<span class="sc">::</span><span class="fu">lowerUpper</span>(corr<span class="fl">.1</span><span class="sc">$</span>p, corr<span class="fl">.2</span><span class="sc">$</span>p)</span>
+<span id="cb1-53"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-53" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-54" tabindex="-1"></a><span class="co"># psych::cor.plot(r = cormat.full,</span></span>
+<span id="cb1-55"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-55" tabindex="-1"></a><span class="co">#          pval = pvals.full,</span></span>
+<span id="cb1-56"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-56" tabindex="-1"></a><span class="co">#          labels = cormatlabels,</span></span>
+<span id="cb1-57"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-57" tabindex="-1"></a><span class="co">#          upper = T,</span></span>
+<span id="cb1-58"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-58" tabindex="-1"></a><span class="co">#          stars= F,</span></span>
+<span id="cb1-59"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-59" tabindex="-1"></a><span class="co">#          adjust=&#39;none&#39;,</span></span>
+<span id="cb1-60"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-60" tabindex="-1"></a><span class="co">#          scale =F,</span></span>
+<span id="cb1-61"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-61" tabindex="-1"></a><span class="co">#          gr = colorRampPalette(c(&quot;#5D3A9B&quot;, &quot;white&quot;, &quot;#E66100&quot;)),</span></span>
+<span id="cb1-62"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-62" tabindex="-1"></a><span class="co">#          cex = 1,</span></span>
+<span id="cb1-63"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-63" tabindex="-1"></a><span class="co">#          MAR = 8,</span></span>
+<span id="cb1-64"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-64" tabindex="-1"></a><span class="co">#          n.legend=8,</span></span>
+<span id="cb1-65"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-65" tabindex="-1"></a><span class="co">#          xlas = 2,</span></span>
+<span id="cb1-66"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-66" tabindex="-1"></a><span class="co">#          keep.par = F,</span></span>
+<span id="cb1-67"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-67" tabindex="-1"></a><span class="co">#          cex.axis = 0.7</span></span>
+<span id="cb1-68"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-68" tabindex="-1"></a><span class="co">#          )</span></span>
+<span id="cb1-69"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-69" tabindex="-1"></a></span>
+<span id="cb1-70"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-70" tabindex="-1"></a>corplot <span class="ot">&lt;-</span> reshape2<span class="sc">::</span><span class="fu">melt</span>(cormat.full) <span class="sc">%&gt;%</span></span>
+<span id="cb1-71"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-71" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Var1, <span class="at">y =</span> Var2, <span class="at">fill =</span> value)) <span class="sc">+</span></span>
+<span id="cb1-72"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-72" tabindex="-1"></a>  <span class="fu">geom_tile</span>(<span class="at">color =</span> <span class="st">&#39;black&#39;</span>) <span class="sc">+</span></span>
+<span id="cb1-73"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-73" tabindex="-1"></a>  <span class="fu">coord_flip</span>(<span class="at">clip =</span> <span class="st">&#39;off&#39;</span>) <span class="sc">+</span></span>
+<span id="cb1-74"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-74" tabindex="-1"></a>  viridis<span class="sc">::</span><span class="fu">scale_fill_viridis</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">1</span>),</span>
+<span id="cb1-75"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-75" tabindex="-1"></a>                              <span class="at">option =</span> <span class="st">&#39;turbo&#39;</span>,</span>
+<span id="cb1-76"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-76" tabindex="-1"></a>                              <span class="at">na.value =</span> <span class="st">&#39;white&#39;</span>) <span class="sc">+</span></span>
+<span id="cb1-77"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-77" tabindex="-1"></a>  <span class="fu">scale_x_discrete</span>(<span class="at">labels =</span> <span class="fu">rev</span>(table1rows), <span class="at">limits =</span> rev) <span class="sc">+</span></span>
+<span id="cb1-78"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-78" tabindex="-1"></a>  <span class="fu">scale_y_discrete</span>(<span class="at">labels =</span> table1rows, <span class="at">position =</span> <span class="st">&#39;right&#39;</span>) <span class="sc">+</span></span>
+<span id="cb1-79"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-79" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;&quot;</span>, <span class="at">y =</span> <span class="st">&quot;&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;&quot;</span>) <span class="sc">+</span></span>
+<span id="cb1-80"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-80" tabindex="-1"></a>  <span class="fu">geom_text</span>(</span>
+<span id="cb1-81"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-81" tabindex="-1"></a>    <span class="fu">aes</span>(</span>
+<span id="cb1-82"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-82" tabindex="-1"></a>      <span class="at">x =</span> Var1,</span>
+<span id="cb1-83"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-83" tabindex="-1"></a>      <span class="at">y =</span> Var2,</span>
+<span id="cb1-84"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-84" tabindex="-1"></a>      <span class="at">label =</span> <span class="fu">printnum</span>(value, <span class="at">digits =</span> <span class="dv">2</span>, <span class="at">na_string =</span> <span class="st">&#39;&#39;</span>)</span>
+<span id="cb1-85"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-85" tabindex="-1"></a>    ),</span>
+<span id="cb1-86"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-86" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">&quot;black&quot;</span>,</span>
+<span id="cb1-87"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-87" tabindex="-1"></a>    <span class="at">fontface =</span> <span class="st">&quot;bold&quot;</span>,</span>
+<span id="cb1-88"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-88" tabindex="-1"></a>    <span class="at">size =</span> <span class="dv">5</span></span>
+<span id="cb1-89"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-89" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb1-90"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-90" tabindex="-1"></a>  <span class="fu">annotate</span>(</span>
+<span id="cb1-91"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-91" tabindex="-1"></a>    <span class="st">&#39;text&#39;</span>,</span>
+<span id="cb1-92"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-92" tabindex="-1"></a>    <span class="at">label =</span> <span class="st">&#39;Sample 2 (Above Diagonal, N = 569)&#39;</span>,</span>
+<span id="cb1-93"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-93" tabindex="-1"></a>    <span class="at">x =</span> <span class="fl">7.5</span>,</span>
+<span id="cb1-94"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-94" tabindex="-1"></a>    <span class="at">y =</span> <span class="dv">16</span>,</span>
+<span id="cb1-95"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-95" tabindex="-1"></a>    <span class="at">angle =</span> <span class="dv">90</span>,</span>
+<span id="cb1-96"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-96" tabindex="-1"></a>    <span class="at">size =</span> <span class="dv">8</span>,</span>
+<span id="cb1-97"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-97" tabindex="-1"></a>    <span class="at">family =</span> <span class="st">&#39;serif&#39;</span></span>
+<span id="cb1-98"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-98" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb1-99"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-99" tabindex="-1"></a>  <span class="fu">annotate</span>(</span>
+<span id="cb1-100"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-100" tabindex="-1"></a>    <span class="st">&#39;text&#39;</span>,</span>
+<span id="cb1-101"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-101" tabindex="-1"></a>    <span class="at">label =</span> <span class="st">&#39;Sample 1 (Below Diagonal, N = 651)&#39;</span>,</span>
+<span id="cb1-102"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-102" tabindex="-1"></a>    <span class="at">x =</span> <span class="dv">0</span>,</span>
+<span id="cb1-103"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-103" tabindex="-1"></a>    <span class="at">y =</span> <span class="fl">7.5</span>,</span>
+<span id="cb1-104"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-104" tabindex="-1"></a>    <span class="at">size =</span> <span class="dv">8</span>,</span>
+<span id="cb1-105"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-105" tabindex="-1"></a>    <span class="at">family =</span> <span class="st">&#39;serif&#39;</span></span>
+<span id="cb1-106"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-106" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb1-107"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-107" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb1-108"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-108" tabindex="-1"></a>    <span class="at">plot.margin =</span> <span class="fu">unit</span>(<span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">1</span>), <span class="st">&quot;lines&quot;</span>),</span>
+<span id="cb1-109"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-109" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">&#39;bottom&#39;</span>,</span>
+<span id="cb1-110"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-110" tabindex="-1"></a>    <span class="at">legend.box =</span> <span class="st">&quot;horizontal&quot;</span>,</span>
+<span id="cb1-111"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-111" tabindex="-1"></a>    <span class="at">legend.key.width =</span> <span class="fu">unit</span>(<span class="fl">1.5</span>, <span class="st">&quot;cm&quot;</span>),</span>
+<span id="cb1-112"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-112" tabindex="-1"></a>    <span class="at">legend.justification =</span> <span class="st">&quot;right&quot;</span>,</span>
+<span id="cb1-113"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-113" tabindex="-1"></a>    <span class="at">axis.ticks.length =</span> <span class="fu">unit</span>(<span class="fl">0.3</span>, <span class="st">&quot;cm&quot;</span>),</span>
+<span id="cb1-114"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-114" tabindex="-1"></a>    <span class="at">legend.box.background  =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb1-115"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-115" tabindex="-1"></a>    <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">18</span>),</span>
+<span id="cb1-116"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-116" tabindex="-1"></a>    <span class="at">panel.background =</span>  <span class="fu">element_blank</span>(),</span>
+<span id="cb1-117"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-117" tabindex="-1"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(</span>
+<span id="cb1-118"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-118" tabindex="-1"></a>      <span class="at">angle =</span> <span class="dv">90</span>,</span>
+<span id="cb1-119"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-119" tabindex="-1"></a>      <span class="at">hjust =</span> <span class="dv">0</span>,</span>
+<span id="cb1-120"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-120" tabindex="-1"></a>      <span class="at">face =</span> <span class="st">&#39;bold&#39;</span>,</span>
+<span id="cb1-121"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-121" tabindex="-1"></a>      <span class="at">size =</span> <span class="dv">13</span></span>
+<span id="cb1-122"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-122" tabindex="-1"></a>    ),</span>
+<span id="cb1-123"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-123" tabindex="-1"></a>    <span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">&#39;bold&#39;</span>, <span class="at">size =</span> <span class="dv">13</span>)</span>
+<span id="cb1-124"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-124" tabindex="-1"></a>  )</span>
+<span id="cb1-125"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-125" tabindex="-1"></a></span>
+<span id="cb1-126"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-126" tabindex="-1"></a><span class="co"># Save Plot</span></span>
+<span id="cb1-127"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-127" tabindex="-1"></a><span class="fu">ggsave</span>(</span>
+<span id="cb1-128"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-128" tabindex="-1"></a>  <span class="fu">paste</span>(<span class="st">&quot;output/figures/&quot;</span>, <span class="st">&quot;cormat.png&quot;</span>, <span class="at">sep =</span> <span class="st">&quot;&quot;</span>),</span>
+<span id="cb1-129"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-129" tabindex="-1"></a>  corplot,</span>
+<span id="cb1-130"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-130" tabindex="-1"></a>  <span class="at">device =</span> <span class="st">&#39;png&#39;</span>,</span>
+<span id="cb1-131"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-131" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">16</span>,</span>
+<span id="cb1-132"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-132" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">14</span>,</span>
+<span id="cb1-133"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-133" tabindex="-1"></a>  <span class="at">dpi =</span> <span class="dv">400</span></span>
+<span id="cb1-134"><a href="reviewing-a-scientific-article-on-the-reproducibility.html#cb1-134" tabindex="-1"></a>)</span></code></pre></div>
+<div class="float">
+<img src="output/figures/cormat.png" alt="Figure 1: A correlation matrix for all measures (Sample 1: below the diagonal line; Sample 2: above the diagonal line)." />
+<div class="figcaption">Figure 1: A correlation matrix for all measures (Sample 1: below the diagonal line; Sample 2: above the diagonal line).</div>
+</div>
+</div>
+<div id="reproduction-review-of-r-code" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Reproduction review of R code<a href="reviewing-a-scientific-article-on-the-reproducibility.html#reproduction-review-of-r-code" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To recreate <em>Figure 1</em> i did not need to change any of the given code to create this heatmap. I did however need to make sure that the function func.R was loaded and in the correct directory. I also had to change the path to load the data and image to make it compatible with this Rmarkdown page.</p>
+<p>Analyzing the code of the data analysis I feel that a lot of steps were being reused. These reused steps could probably become a function for easier analyzing of the data. Because of all these steps it seemed like a unnecessarily long analysis. A lot of the outcome of the split up steps would probably have been clearer when presented together instead of split up.</p>
+<p>I did thoroughly enjoy the way the author presented the different goals within the data analysis. It very clearly showed the next subject of the analysis.</p>
+<p><em>I would give the reproducibility of the code a <strong>4.5</strong></em></p>
+<div id="refefences" class="section level4 hasAnchor" number="6.3.0.1">
+<h4><span class="header-section-number">6.3.0.1</span> Refefences<a href="reviewing-a-scientific-article-on-the-reproducibility.html#refefences" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ol style="list-style-type: decimal">
+<li><p>Zhang H, Miyake A, Osborne J, Shah P, Jonides J (2023) A d factor? Understanding trait distractibility and its relationships with ADHD symptomatology and hyperfocus. PLoS ONE 18(10): e0292215. <a href="https://doi.org/10.1371/journal.pone.0292215" class="uri">https://doi.org/10.1371/journal.pone.0292215</a></p></li>
+<li><p>Sumner, Josh &amp; Haynes, Leah &amp; Nathan, Sarah &amp; Hudson-Vitale, Cynthia &amp; McIntosh, Leslie. (2020). Reproducibility and reporting practices in COVID-19 preprint manuscripts. 10.1101/2020.03.24.20042796.</p></li>
+</ol>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="reproducible-science.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
+});
+});
+</script>
+
+</body>
+
+</html>
